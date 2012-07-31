@@ -1,0 +1,25 @@
+{
+  "name": "mapstrace",
+  "version": "1.0.0",
+  "description": "Print useful stack-traces for combined/minified/compiled files",
+  "keywords": [
+    "source-map",
+    "stack-trace",
+    "middleware",
+    "connect",
+    "haxe"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/janekp/mapstrace.git"
+  },
+  "author": "Janek Priimann <janek.priimann@gmail.com>",
+  "dependencies": {
+    "stack-trace": "0.0.6",
+    "source-map": "0.1.1"
+  },
+  "main": "index",
+  "engines": {
+    "node": ">= 0.4.0"
+  }
+}
