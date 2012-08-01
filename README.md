@@ -19,7 +19,7 @@ For example the following stack-trace:
         at HTTPParser.parser.onIncoming (http.js:1785:12)
         at HTTPParser.parserOnHeadersComplete [as onHeadersComplete] (http.js:111:23)
 
-becomes simply:
+becomes more developer-friendly:
 
     TypeError: Cannot read property 'length' of null:
         at 'if(x.length == 0) {' (.../trunk/server/api/src/RecipesPage.hx:45:25)
@@ -46,7 +46,7 @@ The library can also be used to manually build a list of items and convert them 
     // err  - javascript Error object
     // full - if true, then it will parse source files to fill missing fields.
     // fn   - asynchronous callback that returns a list of items.
-    //        The list contains objects and integers. Integers are used for unknown external items.
+    //        The list can contain objects and integers. Integers are used for unknown external items.
     //        Every item has lineNumber, columnNumber, source and name fields.
     mapstrace.build(err : Error, full : Bool, fn : Array -> Void) : Void;
 
