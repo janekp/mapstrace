@@ -28,6 +28,13 @@ becomes developer-friendly:
         at 'this.handle(req, res, next)' (.../server/api/src/wixe/Server.hx:306:37)
         ... (omitted 6 rows)
 
+# Installation and Dependencies
+
+Install node.js for your platform
+
+    npm install source-map
+    npm install stack-trace
+
 It can be used with or without [Connect](http://github.com/senchalabs/connect)
 
     var mapstrace = require('mapstrace');
