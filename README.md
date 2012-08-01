@@ -3,7 +3,7 @@
 A really simple library for printing human-readable stack-traces
 for combined, minified and/or compiled javascript files.
 
-It assumes that your javascript file(s) have source maps (index.js -> index.js.map etc).
+It assumes that your javascript file(s) have [source maps](http://wiki.mozilla.org/DevTools/Features/SourceMap) (index.js -> index.js.map etc).
 
 For example the following stack-trace:
 
@@ -28,7 +28,7 @@ becomes simply:
         at 'this.handle(req, res, next)' (.../server/api/src/wixe/Server.hx:306:37)
         ... (omitted 6 rows)
 
-It can be used alone or with [Connect](http://github.com/senchalabs/connect).
+It can be used alone or with [Connect](http://github.com/senchalabs/connect)
 
     var mapstrace = require('mapstrace');
     
