@@ -19,7 +19,7 @@ For example the following stack-trace:
         at HTTPParser.parser.onIncoming (http.js:1785:12)
         at HTTPParser.parserOnHeadersComplete [as onHeadersComplete] (http.js:111:23)
 
-becomes more developer-friendly:
+becomes developer-friendly:
 
     TypeError: Cannot read property 'length' of null:
         at 'if(x.length == 0) {' (.../trunk/server/api/src/RecipesPage.hx:45:25)
@@ -28,7 +28,7 @@ becomes more developer-friendly:
         at 'this.handle(req, res, next)' (.../server/api/src/wixe/Server.hx:306:37)
         ... (omitted 6 rows)
 
-It can be used alone or with [Connect](http://github.com/senchalabs/connect)
+It can be used with or without [Connect](http://github.com/senchalabs/connect)
 
     var mapstrace = require('mapstrace');
     
