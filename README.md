@@ -32,8 +32,7 @@ becomes developer-friendly:
 
 Install node.js for your platform
 
-    npm install source-map
-    npm install stack-trace
+    npm install mapstrace
 
 It can be used with or without [Connect](http://github.com/senchalabs/connect)
 
