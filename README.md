@@ -23,7 +23,7 @@ becomes developer-friendly:
 
     TypeError: Cannot read property 'length' of null:
         at 'if(x.length == 0) {' (.../trunk/server/api/src/RecipesPage.hx:45:25)
-        at 'wixe.start(3000)' (.../trunk/server/api/src/Application.hx:18:26)
+        at 'wixe.get('/:action/:id{0-9}', RecipesPage)' (.../trunk/server/api/src/Application.hx:15:7)
         at 'handler(ctx)' (.../server/api/src/wixe/Server.hx:290:23)
         at 'this.handle(req, res, next)' (.../server/api/src/wixe/Server.hx:306:37)
         ... (omitted 6 rows)
